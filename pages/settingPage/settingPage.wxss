@@ -1,0 +1,43 @@
+/* pages/settingPage/settingPage.wxss */
+
+.text {
+  min-height: 25px;
+  color: rgb(255, 255, 255);
+   padding: 0 5px 0 5px;
+  margin-left: 15px;
+  background-color: #3245df;
+  border-radius: 5px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.icon {
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  background-color: rgb(145, 145, 145,.45);
+}
+
+.platform {
+  margin:12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.platformBox {
+  min-height: 80px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 15px;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.19);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.content {
+  height: 300px;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

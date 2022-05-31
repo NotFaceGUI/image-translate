@@ -1,0 +1,37 @@
+<!--pages/translatePage/translatePage.wxml-->
+<t-sticky offset-top="{{15}}">
+  <view class="setting" style="position: absolute; left: 624rpx; top: 3rpx;">
+    <t-icon name="setting" size="30px" bind:click="setting" class="icon" />
+  </view>
+</t-sticky>
+
+<view class="body" style="width: 706rpx; display: block; box-sizing: border-box; position: relative; left: 23rpx; top: 0rpx">
+  <view class="translate">
+    <picker bindchange="bindPickerChange" value="{{setSourceIndex}}" range="{{sourceArr}}" range-key="label" class="picker">
+      <view>
+        {{sourceArr[setSourceIndex].label}}
+      </view>
+    </picker>
+    <t-icon name="swap" size="x1" bind:click="setting" class="picker" />
+    <picker bindchange="bindPickerChange2" value="{{setTargetIndex}}" range="{{targetArr}}" range-key="label"  class="picker">
+      <view>
+        {{targetArr[setTargetIndex].label}}
+      </view>
+    </picker>
+  </view>
+
+  <t-button theme="primary" size="large" icon="app" bindtap="readImage">选择图片</t-button>
+  <t-divider t-class="demo-1" t-class-content="t-class-content" dashed>
+    <text slot="content">数据</text>
+  </t-divider>
+  <block wx:if="{{currentImage.length !== 0}}">
+    <image src="{{currentImage}}"  class="image"></image>
+    <t-textarea name="标签文字" placeholder="" model:value="{{imageUrl}}"/>
+    <t-button theme="primary" size="large" icon="app" bindtap="readImage">复制</t-button>
+  </block>
+</view>
+
+<view lass="footer">
+  <t-icon name="logo-github-filled" size="xl" bind:click="github" />
+  <t-footer theme="text" copyright="Copyright © 2021-2031 TD.All Rights Reserved." />
+</view>

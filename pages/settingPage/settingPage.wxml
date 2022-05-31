@@ -1,0 +1,62 @@
+<!--pages/settingPage/settingPage.wxml-->
+<view bindtap="close">
+  <view style="text-align: center;">
+    <text style="margin: 10px;font-weight: bold;display: inline-block;">
+      翻译平台选择
+    </text>
+    <t-icon name="help" size="16px" class="icon" catchtap="translatePlatform" />
+  </view>
+
+  <view class="platform">
+    <image src="/image/baidu.png" style="width: 64px; height: 64px;border: 3px #3245df solid; border-radius: 15px;box-sizing: border-box;"></image>
+  </view>
+
+  <view class="platformBox">
+    <text class="text">appid</text>
+    <t-input placeholder="请输入appid" class="input" model:value="{{transateAppid}}" bindblur="inputBlur" id="transateAppid" />
+  </view>
+
+  <view class="platformBox">
+    <text class="text">密钥</text>
+    <t-input type="password" placeholder="请输入密钥" class="input" model:value="{{transatepassword}}"  bindblur="inputBlur" id="transatepassword"/>
+  </view>
+
+  <view style="text-align: center;padding-top: 15px;">
+    <text style="display: block;margin: 10px;font-weight: bold;display: inline-block;">图片翻译平台选择</text>
+    <t-icon name="help" size="16px" class="icon"  catchtap="imagePlatform"/>
+  </view>
+
+  <view class="platform">
+    <image src="/image/baidu.png" style="width: 64px; height: 64px;border: 3px #3245df solid; border-radius: 15px;box-sizing: border-box;"></image>
+  </view>
+
+  <view class="platformBox">
+    <text class="text">appid</text>
+    <t-input  placeholder="请输入appid" class="input" model:value="{{imageAppid}}"/>
+  </view>
+
+  <view class="platformBox">
+    <text class="text">密钥</text>
+    <t-input type="password" placeholder="请输入密钥" class="input" model:value="{{imagePassword}}" />
+  </view>
+
+  <view class="container" style="height: 50px;padding: 15px;">
+    <t-button theme="primary" size="large" bindtap="save">保存数据</t-button>
+  </view>
+
+  <t-popup visible="{{imageVisible}}" placement="bottom" >
+    <view solt="content" class="content" style="overflow: hidden;">图片翻译</view>
+  </t-popup>
+
+  <t-popup visible="{{textVisible}}" placement="bottom" >
+    <view solt="content" class="content" style="overflow: hidden;">翻译平台</view>
+  </t-popup>
+
+  <t-dialog
+  visible="{{dialogVisible}}"
+  title="保存成功"
+  content=""
+  confirm-btn="我知道了"
+  bind:confirm="confirmHandle"
+  ></t-dialog>
+</view>

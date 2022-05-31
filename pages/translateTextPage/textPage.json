@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "t-icon": "tdesign-miniprogram/icon/icon",
+    "t-picker": "tdesign-miniprogram/picker/picker",
+    "t-button": "tdesign-miniprogram/button/button",
+    "t-textarea": "tdesign-miniprogram/textarea/textarea"
+  }
+}

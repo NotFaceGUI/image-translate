@@ -1,0 +1,15 @@
+{
+  "name": "image-translate",
+  "version": "1.0.0",
+  "description": "一个简便的OCR识别小程序",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "notface",
+  "license": "ISC",
+  "directories": {},
+  "dependencies": {
+    "tdesign-miniprogram": "^0.11.1"
+  }
+}

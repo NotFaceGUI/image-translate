@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/translatePage/translatePage",
+    "pages/settingPage/settingPage",
+    "pages/translateTextPage/textPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#0052d9",
+    "list": [{
+      "pagePath": "pages/translatePage/translatePage",
+      "text": "文字识别",
+      "iconPath": "/image/ocr.png",
+      "selectedIconPath": "/image/ocr.png"
+    },{
+      "pagePath": "pages/translateTextPage/textPage",
+      "text": "通用翻译",
+      "iconPath": "/image/翻译.png",
+      "selectedIconPath": "/image/翻译.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

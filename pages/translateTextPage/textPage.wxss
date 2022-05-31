@@ -1,0 +1,15 @@
+/* pages/translateTextPage/textPage.wxss */
+.text {
+  display: block;
+  padding-left: 15px;
+  background-color: rgba(204, 204, 204, 0.308);
+}
+
+.translate {
+  margin-bottom: 10px;
+}
+
+.picker {
+  display: inline-block;
+  margin: 0 10px;
+}

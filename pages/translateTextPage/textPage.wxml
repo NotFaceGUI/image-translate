@@ -1,0 +1,25 @@
+<!--pages/translateTextPage/textPage.wxml-->
+<view>
+  <view class="container" style="height: 50px;padding: 0;line-height: 50px;">
+    <view class="translate">
+      <picker bindchange="bindPickerChange" value="{{setSourceIndex}}" range="{{sourceArr}}" range-key="label" class="picker">
+        <view class="translateText">
+          {{sourceArr[setSourceIndex].label}}
+        </view>
+      </picker>
+      <t-icon name="swap" size="x1" bind:click="setting" class="picker" />
+      <picker bindchange="bindPickerChange2" value="{{setTargetIndex}}" range="{{targetArr}}" range-key="label" class="picker">
+        <view class="translateText">
+          {{targetArr[setTargetIndex].label}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <text class="text">form</text>
+  <t-textarea name="标签文字" placeholder="待翻译文本" model:value="{{queryString}}"/>
+  <text class="text">to</text>
+  <t-textarea name="标签文字" placeholder="翻译结果" model:value="{{resultString}}"/>
+  <view class="container" style="height: 100px;padding: 0; line-height: 80px;">
+    <t-button theme="primary" size="large" bindtap="translate" >翻译</t-button>
+  </view>
+</view>

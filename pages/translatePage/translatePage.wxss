@@ -1,0 +1,57 @@
+/* pages/translatePage/translatePage.wxss */
+
+page{
+  height: 100%;
+}
+
+.body {
+  min-height: 200px;
+  padding: 15% 0 15%  0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.footer {
+  width: 100%;
+}
+
+.image {
+  border: 1px rgb(202, 202, 202) solid;
+  margin: 20px;
+  margin-top: 40px;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.demo-1 {
+  width: 90%;
+  position: absolute;
+  right: 5%;
+}
+
+.setting {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 50%;
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.picker {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.translate {
+  margin-bottom: 10px;
+}
